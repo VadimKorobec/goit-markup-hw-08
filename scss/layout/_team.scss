@@ -28,6 +28,15 @@
   background: var(--white-color);
   letter-spacing: 0.03em;
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .team-container__subtitel {
