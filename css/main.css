@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.portfolio, .clients, .team, .doing, .hero {
+.portfolio, .doing, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -116,9 +116,15 @@ a {
 
 .section-titel {
   color: var(--secondary-color);
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-titel {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .socials__list {
@@ -1018,7 +1024,15 @@ a {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-grey-color);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__section-titel {
@@ -1079,6 +1093,17 @@ a {
   text-align: center;
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1106,7 +1131,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -1118,6 +1143,16 @@ a {
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__icon {
