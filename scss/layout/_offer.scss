@@ -7,6 +7,11 @@
 }
 
 .offer-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: var(--indent);
@@ -20,13 +25,21 @@
   text-transform: uppercase;
   color: var(--secondary-color);
 
-  @media screen and(min-width:480px) {
+  @media screen and (max-width: 480px) {
     text-align: center;
   }
 }
 
 .offer-list__item {
-  flex-basis: 270px;
+  flex-basis: 450px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+  }
 }
 
 .offer-list__wrapper {
@@ -68,5 +81,12 @@
 
 .offer-list__text {
   @include fonts(14px, 24px, 400);
-  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 57px;
+  }
 }
