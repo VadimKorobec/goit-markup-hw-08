@@ -1,11 +1,5 @@
 .doing {
-  @extend %section;
-
-  @media screen and(min-width:480px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
