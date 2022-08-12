@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.portfolio, .clients, .team, .doing, .offer, .hero {
+.portfolio, .clients, .team, .offer, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -971,6 +971,12 @@ a {
 @media screen and (min-width: 768px) {
   .offer-list__text {
     margin-bottom: 57px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doing {
+    display: none;
   }
 }
 
