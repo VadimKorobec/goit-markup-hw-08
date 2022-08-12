@@ -974,17 +974,6 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .doing {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .doing {
-    display: none;
-  }
-}
-
 .doing__section {
   padding-top: 0;
 }
