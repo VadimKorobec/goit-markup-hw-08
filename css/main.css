@@ -92,11 +92,26 @@ a {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  outline: 1 px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .section-titel {
@@ -835,11 +850,13 @@ a {
   padding-bottom: 0;
 }
 
-.offer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: var(--indent);
+@media screen and (min-width: 1200px) {
+  .offer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: var(--indent);
+  }
 }
 
 .offer-list__title {
@@ -850,6 +867,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 480px) {
+  .offer-list__title {
+    text-align: center;
+  }
 }
 
 .offer-list__item {
@@ -867,10 +889,44 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--bg-grey-color);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .offer-list__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 354px;
+    height: 120px;
+    background-color: var(--bg-grey-color);
+    border-radius: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offer-list__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bg-grey-color);
+    border-radius: 4px;
+  }
 }
 
 .offer__wrapper {
@@ -882,6 +938,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .doing__section {
