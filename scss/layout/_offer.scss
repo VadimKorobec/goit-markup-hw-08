@@ -19,6 +19,10 @@
   @include fonts(14px, 16px, 700);
   text-transform: uppercase;
   color: var(--secondary-color);
+
+  @media screen and(min-width:480px) {
+    text-align: center;
+  }
 }
 
 .offer-list__item {
@@ -26,10 +30,25 @@
 }
 
 .offer-list__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 450px;
   height: 120px;
   background-color: var(--bg-grey-color);
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 354px;
+    height: 120px;
+    background-color: var(--bg-grey-color);
+    border-radius: 4px;
+  }
 
   @media screen and(min-width:1200px) {
     display: flex;
@@ -49,4 +68,5 @@
 
 .offer-list__text {
   @include fonts(14px, 24px, 400);
+  margin-bottom: 30px;
 }
