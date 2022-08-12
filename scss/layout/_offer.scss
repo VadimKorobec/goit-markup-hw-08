@@ -7,8 +7,10 @@
 }
 
 .offer-list {
-  display: flex;
-  gap: var(--indent);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: var(--indent);
+  }
 }
 
 .offer-list__title {
@@ -24,14 +26,21 @@
 }
 
 .offer-list__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--bg-grey-color);
   border-radius: 4px;
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background-color: var(--bg-grey-color);
+    border-radius: 4px;
+  }
 }
 
 .offer__wrapper {
