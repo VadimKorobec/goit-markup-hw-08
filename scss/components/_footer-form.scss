@@ -1,5 +1,6 @@
 .form-fotter__titel {
   margin-bottom: 20px;
+  text-align: center;
 
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -8,15 +9,16 @@
 }
 
 .form-fotter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 .form-fotter__input {
-  display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
 
@@ -25,19 +27,27 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: transparent;
   border-radius: 4px;
+  margin-bottom: 20px;
 
-  &::placeholder {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    color: rgba(255, 255, 255, 0.6);
+  @media screen and(min-width:1200px) {
+    display: block;
+    width: 358px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
 
 .form-fotter-btn {
-  display: inline-flex;
+  display: block;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
   min-width: 200px;
   min-height: 50px;
@@ -54,9 +64,10 @@
   border: none;
   transition: background-color var(--timeng-function);
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-hover-color);
+  @media screen and(min-width:1200px) {
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hover-color);
+    }
   }
 }
