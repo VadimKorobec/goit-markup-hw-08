@@ -1,16 +1,23 @@
 .offer {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .offer__section {
-  padding-bottom: 0;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .offer-list {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: var(--indent);
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -31,7 +38,9 @@
 }
 
 .offer-list__item {
-  flex-basis: 450px;
+  @media screen and(min-width:480px) {
+    flex-basis: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: 354px;
@@ -81,8 +90,4 @@
 
 .offer-list__text {
   @include fonts(14px, 24px, 400);
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 57px;
-  }
 }
