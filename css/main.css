@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.portfolio, .clients, .team, .doing, .offer, .hero {
+.portfolio, .clients, .team, .doing, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -94,7 +94,6 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 1 px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -111,6 +110,7 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid tomato;
   }
 }
 
@@ -846,8 +846,21 @@ a {
   border: none;
 }
 
-.offer__section {
-  padding-bottom: 0;
+.offer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .offer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer__section {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -855,11 +868,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: var(--indent);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -886,9 +895,11 @@ a {
   }
 }
 
-.offer-list__item {
-  -ms-flex-preferred-size: 450px;
-      flex-basis: 450px;
+@media screen and (min-width: 480px) {
+  .offer-list__item {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .offer-list__item {
@@ -962,16 +973,6 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-@media screen and (min-width: 480px) {
-  .offer-list__text {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .offer-list__text {
-    margin-bottom: 57px;
-  }
 }
 
 @media (max-width: 768px) {
