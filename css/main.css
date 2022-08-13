@@ -735,6 +735,11 @@ a {
 .header__mailto:hover, .header__mailto:focus {
   color: #2196f3;
 }
+@media screen and (max-width: 767px) {
+  .header__mailto {
+    display: none;
+  }
+}
 
 .header__phone {
   display: -webkit-box;
@@ -757,12 +762,22 @@ a {
 .header__phone:hover, .header__phone:focus {
   color: var(--accent-color);
 }
+@media screen and (max-width: 767px) {
+  .header__phone {
+    display: none;
+  }
+}
 
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 .nav__link {
