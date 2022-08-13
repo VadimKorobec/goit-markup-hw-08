@@ -9,6 +9,8 @@
 }
 
 .form-fotter {
+  text-align: center;
+
   @media screen and(min-width:1200px) {
     display: flex;
     align-items: center;
@@ -51,12 +53,10 @@
 }
 
 .form-fotter-btn {
-  display: block;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
 
   min-width: 200px;
   min-height: 50px;
