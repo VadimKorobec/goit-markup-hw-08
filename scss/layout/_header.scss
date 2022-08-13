@@ -47,6 +47,10 @@
   &:focus {
     color: #2196f3;
   }
+
+  @media screen and(max-width:767px) {
+    display: none;
+  }
 }
 
 .header__phone {
@@ -68,5 +72,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and(max-width:767px) {
+    display: none;
   }
 }
