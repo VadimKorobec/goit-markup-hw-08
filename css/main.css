@@ -773,6 +773,9 @@ a {
   padding-right: 15px;
   cursor: pointer;
 }
+.icon__close:focus {
+  fill: #2196f3;
+}
 
 .mobile__list {
   margin-bottom: auto;
