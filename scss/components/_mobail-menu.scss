@@ -71,6 +71,10 @@
   padding-top: 10px;
   padding-right: 15px;
   cursor: pointer;
+
+  &:focus {
+    fill: #2196f3;
+  }
 }
 
 .mobile__list {
