@@ -38,7 +38,7 @@
         <a class="logo header__logo" href="./index.html"
           >Web<span class="logo__color">Studio</span></a
         >
-        <button class="menu__btn" type="button">
+        <button class="menu__btn" type="button" data-menu-open>
           <svg class="" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -724,15 +724,15 @@
       </div>
     </div>
     <!--Mobeil-menu-->
-    <div class="menu_container">
-      <button type="button">
+    <div class="menu_container" data-menu>
+      <button class="menu__btn" type="button" data-menu-close>
         <svg class="" width="40" height="40">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="mobile__list">
         <li class="mobile__item">
-          <a class="mobile__link" href="">Студія</a>
+          <a class="mobile__link mobile__link--current" href="">Студія</a>
         </li>
         <li class="mobile__item">
           <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
@@ -764,6 +764,7 @@
         </li>
       </ul>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
