@@ -46,15 +46,16 @@
   }
 }
 
-.menu_container .is-open {
-  transform: translateX(0);
-}
+// .menu_container .is-open {
+//   transform: translateX(0);
+// }
 
 .mobile__list:first-child {
   margin-bottom: auto;
 }
 
 .mobile__item {
+  display: block;
   margin-bottom: 32px;
 
   &:last-child {
