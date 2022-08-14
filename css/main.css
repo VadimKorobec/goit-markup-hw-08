@@ -70,6 +70,12 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 a {
@@ -773,7 +779,7 @@ a {
   padding-right: 15px;
   cursor: pointer;
 }
-.icon__close:focus {
+.icon__close:active {
   fill: #2196f3;
 }
 
