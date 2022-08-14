@@ -170,12 +170,24 @@ a {
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  font-size: 24px;
+  line-height: 0.1072796935;
   font-family: var(--secondary-font);
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-bottom: 25px;
+    padding-bottom: 26px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__color {
@@ -680,9 +692,7 @@ a {
 }
 
 .menu__btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -691,6 +701,7 @@ a {
           justify-content: center;
   width: 40px;
   height: 40px;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -806,17 +817,21 @@ a {
   border-left: none;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .header__nav {
