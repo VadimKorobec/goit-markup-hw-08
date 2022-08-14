@@ -745,16 +745,12 @@ a {
   }
 }
 
-.menu_container .is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 .mobile__list:first-child {
   margin-bottom: auto;
 }
 
 .mobile__item {
+  display: block;
   margin-bottom: 32px;
 }
 .mobile__item:last-child {
