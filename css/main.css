@@ -724,11 +724,18 @@ a {
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 100;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
 }
 @media screen and (min-width: 768px) {
   .menu_container {
     display: none;
   }
+}
+
+.menu_container .is-open {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .mobile__list:first-child {
