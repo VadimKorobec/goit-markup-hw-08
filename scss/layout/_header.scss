@@ -6,12 +6,16 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 
 .header__nav {
