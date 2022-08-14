@@ -766,6 +766,14 @@ a {
   display: flex;
 }
 
+.socilas__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .header {
   border: 1px solid var(--border-color);
   border-top: none;
