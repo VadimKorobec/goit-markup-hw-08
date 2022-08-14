@@ -705,6 +705,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -744,7 +747,13 @@ a {
   color: #212121;
 }
 
+.mobile__link--current {
+  color: #2196f3;
+}
+
 .contacts__phone {
+  display: block;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -753,6 +762,8 @@ a {
 }
 
 .contacts__mailto {
+  display: block;
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -779,10 +790,12 @@ a {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.socilas__link::after {
+
+.socilas__item:not(:last-child) .socilas__link::after {
   content: "";
   display: block;
   width: 1px;
+  margin-left: 10px;
   background-color: rgba(33, 33, 33, 0.2);
 }
 
