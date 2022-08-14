@@ -28,6 +28,18 @@
   height: 100%;
 
   background-color: transparent;
+
+  transition: opacity var(--timeng-function), visibility var(--timeng-function);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+  }
 }
 
 .menu_container {
@@ -40,14 +52,15 @@
   background-color: #ffffff;
 
   transform: translateX(100%);
+  transition: transform var(--timeng-function);
+
+  .menu__overlay.is-open & {
+    transform: translateX(0);
+  }
 
   @media screen and(min-width:768px) {
     display: none;
   }
-}
-
-.menu_container .is-open {
-  transform: translateX(0);
 }
 
 .mobile__list {
