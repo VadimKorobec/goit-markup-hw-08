@@ -169,7 +169,9 @@ a {
 }
 
 .logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 24px;
   line-height: 0.1072796935;
   font-family: var(--secondary-font);
@@ -318,6 +320,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .form-fotter__input {
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -692,7 +695,6 @@ a {
 }
 
 .menu__btn {
-  margin-left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -853,12 +855,6 @@ a {
   .header__container {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__logo {
-    margin-right: 93px;
   }
 }
 
