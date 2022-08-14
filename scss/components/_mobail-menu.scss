@@ -77,13 +77,25 @@
 
 .mobile__socilas {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .socilas__link {
+  display: flex;
+
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
-
   color: #2196f3;
+
+  .socilas__item:not(:last-child)&::after {
+    content: '';
+    display: block;
+    width: 1px;
+    margin-left: 10px;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
 }
