@@ -29,9 +29,15 @@
   background-color: #ffffff;
   z-index: 100;
 
+  transform: translate(100%);
+
   @media screen and(min-width:768px) {
     display: none;
   }
+}
+
+.menu_container .is-open {
+  transform: translate(0);
 }
 
 .mobile__list:first-child {
