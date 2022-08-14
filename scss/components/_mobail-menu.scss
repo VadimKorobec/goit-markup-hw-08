@@ -20,6 +20,10 @@
   top: 0;
   left: 0;
 
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -57,7 +61,14 @@
   color: #212121;
 }
 
+.mobile__link--current {
+  color: #2196f3;
+}
+
 .contacts__phone {
+  display: block;
+  margin-bottom: 32px;
+
   font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
@@ -67,6 +78,8 @@
 }
 
 .contacts__mailto {
+  display: block;
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -89,13 +102,13 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: #2196f3;
+}
 
-  .socilas__item:not(:last-child)&::after {
-    content: '';
-    display: block;
-    width: 1px;
-    margin-left: 10px;
+.socilas__item:not(:last-child) .socilas__link::after {
+  content: '';
+  display: block;
+  width: 1px;
+  margin-left: 10px;
 
-    background-color: rgba(33, 33, 33, 0.2);
-  }
+  background-color: rgba(33, 33, 33, 0.2);
 }
