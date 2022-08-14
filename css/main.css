@@ -316,7 +316,7 @@ a {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .form-fotter__input {
     margin-bottom: 20px;
   }
@@ -1268,7 +1268,7 @@ a {
   background: var(--white-color);
   letter-spacing: 0.03em;
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team-container {
