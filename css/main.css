@@ -1243,7 +1243,12 @@ a {
 }
 
 .team__section-titel {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__section-titel {
+    padding-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -1262,7 +1267,7 @@ a {
 .team-container {
   border-top: none;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-left: 5px;
   padding-right: 5px;
   background: var(--white-color);
@@ -1278,6 +1283,7 @@ a {
 @media screen and (min-width: 1200px) {
   .team-container {
     width: 270px;
+    padding-bottom: 30px;
   }
 }
 
