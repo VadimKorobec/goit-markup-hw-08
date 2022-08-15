@@ -1470,12 +1470,6 @@ a {
 .clients__item:hover .clients__icon, .clients__item:focus .clients__icon {
   fill: var(--accent-color);
 }
-@media screen and (max-width: 479px) {
-  .clients__item {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .clients__item {
     width: 226px;
