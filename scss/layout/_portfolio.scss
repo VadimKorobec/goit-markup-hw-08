@@ -88,7 +88,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   @include fonts(18px, 28px, 400);
   color: var(--white-color);
@@ -96,6 +96,17 @@
   opacity: 0;
   transform: translateY(100%);
   transition: var(--timeng-function);
+
+  @media screen and(min-width) {
+    padding-top: 49px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio-wrapper {
