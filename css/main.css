@@ -937,6 +937,7 @@ a {
   .header__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -947,14 +948,6 @@ a {
 
 .header__icon {
   fill: currentColor;
-  width: 14px;
-  height: 10px;
-}
-@media screen and (min-width: 1200px) {
-  .header__icon {
-    width: 16px;
-    height: 12px;
-  }
 }
 
 .header__mailto {
@@ -1032,6 +1025,11 @@ a {
 @media screen and (max-width: 767px) {
   .nav__list {
     display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .nav__list {
+    margin-right: 90px;
   }
 }
 
