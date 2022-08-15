@@ -811,7 +811,9 @@ a {
   padding-right: 15px;
   cursor: pointer;
 }
-.icon__close:active {
+.icon__close:focus,
+.icon__close :hover,
+.icon__close :active {
   fill: #2196f3;
 }
 
