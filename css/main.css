@@ -1022,8 +1022,14 @@ a {
 }
 
 .hero__wrap {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__wrap {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__overlay {
