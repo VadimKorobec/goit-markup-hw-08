@@ -417,18 +417,6 @@ a {
   transition: transform var(--timeng-function), opacity var(--timeng-function);
   transition: transform var(--timeng-function), opacity var(--timeng-function), -webkit-transform var(--timeng-function);
 }
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -534,11 +522,6 @@ a {
 .form-group__input:hover + .form-group__icon, .form-group__input:focus + .form-group__icon {
   fill: var(--accent-color);
 }
-@media screen and (max-width: 479) {
-  .form-group__input {
-    width: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .form-group__input {
     width: 448px;
@@ -628,11 +611,6 @@ a {
 }
 .form-textaria:hover, .form-textaria:focus {
   border-color: var(--accent-color);
-}
-@media screen and (max-width: 479px) {
-  .form-textaria {
-    width: auto;
-  }
 }
 @media screen and (min-width: 1200px) {
   .form-textaria {
