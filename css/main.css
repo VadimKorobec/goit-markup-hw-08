@@ -1043,6 +1043,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(../../images/hero/Header\ img@1x_sm.jpg);
 }
 @media screen and (min-width: 768px) {
   .hero__overlay {
