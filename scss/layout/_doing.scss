@@ -1,7 +1,7 @@
 .doing {
   @extend %section;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }
