@@ -24,13 +24,14 @@
   margin-bottom: 50px;
 }
 
-.clients__link {
+.clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 210px;
   height: 92px;
+
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: border-color var(--timeng-function), fill var(--timeng-function);
@@ -43,6 +44,11 @@
   &:hover .clients__icon,
   &:focus .clients__icon {
     fill: var(--accent-color);
+  }
+
+  @media screen and(max-width:479px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
