@@ -71,7 +71,9 @@
   padding-right: 15px;
   cursor: pointer;
 
-  &:active {
+  &:focus,
+  :hover,
+  :active {
     fill: #2196f3;
   }
 }
