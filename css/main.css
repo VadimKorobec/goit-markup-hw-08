@@ -1065,7 +1065,7 @@ a {
 .hero__button {
   min-width: 200px;
   min-height: 50px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   background-color: var(--accent-color);
   color: var(--white-color);
   border: none;
@@ -1084,6 +1084,12 @@ a {
 .hero__button:hover, .hero__button:focus {
   background-color: var(--btn-hover-color);
   border: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
 
 .offer {
