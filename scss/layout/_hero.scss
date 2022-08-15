@@ -38,6 +38,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   @media screen and(min-width:1200px) {
     width: 696px;
     font-size: 44px;
@@ -48,7 +49,7 @@
 .hero__button {
   min-width: 200px;
   min-height: 50px;
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -67,5 +68,10 @@
   &:focus {
     background-color: var(--btn-hover-color);
     border: none;
+  }
+
+  @media screen and(min-width:1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
   }
 }
