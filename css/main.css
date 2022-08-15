@@ -911,6 +911,11 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
@@ -923,18 +928,32 @@ a {
   }
 }
 
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 50px;
   }
 }
 
+.header__icon {
+  fill: currentColor;
+  width: 14px;
+  height: 10px;
+}
 @media screen and (min-width: 1200px) {
   .header__icon {
-    fill: currentColor;
+    width: 16px;
+    height: 12px;
   }
 }
 
@@ -945,13 +964,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  gap: 8px;
   color: var(--pimary-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--timeng-function);
   transition: color var(--timeng-function);
@@ -964,6 +981,15 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__mailto {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .header__phone {
   display: -webkit-box;
@@ -972,9 +998,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  gap: 8px;
   color: var(--pimary-color);
   font-weight: 500;
   font-size: 14px;
@@ -989,6 +1013,13 @@ a {
 @media screen and (max-width: 767px) {
   .header__phone {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
   }
 }
 
@@ -1133,6 +1164,11 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
