@@ -62,10 +62,6 @@
     fill: var(--accent-color);
   }
 
-  @media screen and(max-width:479) {
-    width: auto;
-  }
-
   @media screen and(min-width:1200px) {
     width: 448px;
   }
@@ -130,10 +126,6 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
-  }
-
-  @media screen and(max-width:479px) {
-    width: auto;
   }
 
   @media screen and(min-width:1200px) {
