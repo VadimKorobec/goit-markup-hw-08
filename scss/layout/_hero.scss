@@ -25,19 +25,23 @@
 }
 
 .hero__title {
-  @media screen and(min-width:1200px) {
-    margin-bottom: 30px;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 30px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 
-    color: var(--white-color);
-    font-weight: 900;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @media screen and(min-width:1200px) {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 
