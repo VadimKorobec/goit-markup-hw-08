@@ -13,11 +13,16 @@
   margin-right: auto;
 
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--secondary-color);
+
+  @media screen and(min-width:1200px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .form-group {
@@ -55,6 +60,10 @@
   &:hover + .form-group__icon,
   &:focus + .form-group__icon {
     fill: var(--accent-color);
+  }
+
+  @media screen and(max-width:479) {
+    width: auto;
   }
 
   @media screen and(min-width:1200px) {
@@ -121,6 +130,10 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+
+  @media screen and(max-width:479px) {
+    width: auto;
   }
 
   @media screen and(min-width:1200px) {
