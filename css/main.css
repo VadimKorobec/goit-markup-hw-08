@@ -405,8 +405,8 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--white-color);
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -416,6 +416,12 @@ a {
   transition: opacity var(--timeng-function), -webkit-transform var(--timeng-function);
   transition: transform var(--timeng-function), opacity var(--timeng-function);
   transition: transform var(--timeng-function), opacity var(--timeng-function), -webkit-transform var(--timeng-function);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -493,7 +499,7 @@ a {
 
 .form-group__input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
@@ -509,6 +515,11 @@ a {
 }
 .form-group__input:hover + .form-group__icon, .form-group__input:focus + .form-group__icon {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-group__input {
+    width: 448px;
+  }
 }
 
 .form-group__icon {
@@ -581,7 +592,7 @@ a {
 }
 
 .form-textaria {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -594,6 +605,11 @@ a {
 }
 .form-textaria:hover, .form-textaria:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-textaria {
+    width: 448px;
+  }
 }
 
 .form-textaria::-webkit-input-placeholder {
@@ -1087,7 +1103,6 @@ a {
 
 .hero__title {
   margin-bottom: 30px;
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
