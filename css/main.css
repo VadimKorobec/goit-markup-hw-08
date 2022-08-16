@@ -598,7 +598,7 @@ a {
 }
 
 .form-textaria {
-  x-width: 370px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1521,6 +1521,12 @@ a {
 }
 .clients__item:hover .clients__icon, .clients__item:focus .clients__icon {
   fill: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .clients__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
