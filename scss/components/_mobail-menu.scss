@@ -70,9 +70,7 @@
   border: none;
   cursor: pointer;
 
-  &:focus,
-  :hover,
-  :active {
+  & :active {
     fill: #2196f3;
   }
 }
