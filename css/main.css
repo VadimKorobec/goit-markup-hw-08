@@ -1787,6 +1787,12 @@ a {
   overflow: hidden;
   z-index: 1000;
 }
+@media screen and (max-width: 768px) {
+  .portfolio-wrapper .portfolio-wrapper:first-child {
+    padding-bottom: 56px;
+  }
+}
+
 .portfolio-wrapper__titel {
   margin-bottom: 4px;
   color: var(--secondary-color);
