@@ -120,7 +120,10 @@
   overflow: hidden;
   z-index: 1000;
 
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:768px) {
+    .portfolio-wrapper:first-child {
+      padding-bottom: 56px;
+    }
   }
 }
 
