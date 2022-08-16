@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.portfolio, .doing, .hero {
+.doing, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -1705,6 +1705,17 @@ a {
     margin-bottom: 60px;
   }
 }
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-btn__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1715,6 +1726,13 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-btn__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .portfolio-button {
