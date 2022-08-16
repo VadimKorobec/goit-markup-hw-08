@@ -419,6 +419,11 @@ a {
   transition: transform var(--timeng-function), opacity var(--timeng-function);
   transition: transform var(--timeng-function), opacity var(--timeng-function), -webkit-transform var(--timeng-function);
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
