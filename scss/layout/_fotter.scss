@@ -102,10 +102,13 @@
 }
 
 .footer-wrapper {
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width:768px) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 206px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
