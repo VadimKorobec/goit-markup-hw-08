@@ -55,7 +55,7 @@
 }
 
 .portfolio__item {
-  width: 100%;
+  max-width: 450px;
   position: relative;
   transition: color var(--timeng-function), box-shadow var(--timeng-function);
 
