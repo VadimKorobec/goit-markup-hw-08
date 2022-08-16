@@ -119,11 +119,11 @@
   border-top: none;
   overflow: hidden;
   z-index: 1000;
+}
 
-  @media screen and(max-width:768px) {
-    .portfolio-wrapper:first-child {
-      padding-bottom: 56px;
-    }
+@media screen and(min-width:767px) and (max-width: 1199px) {
+  .wrapper_tablet {
+    padding-bottom: 56px;
   }
 }
 
