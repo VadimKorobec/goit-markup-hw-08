@@ -1,5 +1,11 @@
 .portfolio {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-btn__list {
@@ -7,11 +13,18 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+
+  @media screen and(max-width:767px) {
+    max-width: 326px;
+    
+  }
 }
 
 .portfolio-button {
-  margin-bottom: 50px;
-}
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+  }
+  
 
 .portfolio__btn {
   padding: 6px 22px;
