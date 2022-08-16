@@ -1787,12 +1787,12 @@ a {
   overflow: hidden;
   z-index: 1000;
 }
-@media screen and (max-width: 768px) {
-  .portfolio-wrapper .portfolio-wrapper:first-child {
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .wrapper_tablet {
     padding-bottom: 56px;
   }
 }
-
 .portfolio-wrapper__titel {
   margin-bottom: 4px;
   color: var(--secondary-color);
