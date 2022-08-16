@@ -1713,7 +1713,7 @@ a {
 }
 
 .portfolio__item {
-  width: 450px;
+  width: 100%;
   position: relative;
   -webkit-transition: color var(--timeng-function), -webkit-box-shadow var(--timeng-function);
   transition: color var(--timeng-function), -webkit-box-shadow var(--timeng-function);
