@@ -1565,7 +1565,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__column {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1573,9 +1573,11 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 231px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .column-footer {
     margin-right: 70px;
