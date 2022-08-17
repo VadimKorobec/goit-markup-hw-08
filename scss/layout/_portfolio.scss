@@ -117,9 +117,12 @@
   transform: translateY(100%);
   transition: var(--timeng-function);
 
+  @media screen and(min-width:480px) {
+    padding: 77px 24px;
+    @include fonts(18px, 28px, 400);
+  }
+
   @media screen and(min-width:768px) {
-    font-weight: 400;
-    font-size: 18px;
     padding-top: 49px;
     padding-bottom: 77px;
     padding-left: 24px;
