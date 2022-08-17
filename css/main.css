@@ -961,7 +961,7 @@ a {
   fill: currentColor;
 }
 
-.header__mailto {
+.header__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,53 +977,21 @@ a {
   -webkit-transition: color var(--timeng-function);
   transition: color var(--timeng-function);
 }
-.header__mailto:hover, .header__mailto:focus {
+.header__link:hover, .header__link:focus {
   color: #2196f3;
 }
 @media screen and (max-width: 767px) {
-  .header__mailto {
+  .header__link {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__mailto {
+  .header__link {
     padding-top: 32px;
     padding-bottom: 32px;
     gap: 10px;
     font-size: 14px;
     line-height: 1.14;
-  }
-}
-
-.header__phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-  color: var(--pimary-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  -webkit-transition: color var(--timeng-function);
-  transition: color var(--timeng-function);
-}
-.header__phone:hover, .header__phone:focus {
-  color: var(--accent-color);
-}
-@media screen and (max-width: 767px) {
-  .header__phone {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__phone {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    gap: 10px;
   }
 }
 
