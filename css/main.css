@@ -961,6 +961,13 @@ a {
 .header__icon--phone {
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .header__icon--mail .header__icon--mail,
+.header__icon--phone .header__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .header__link {
   display: -webkit-box;
