@@ -1816,10 +1816,12 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 77px 24px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 2;
   letter-spacing: 0.03em;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -1829,8 +1831,10 @@ a {
   -webkit-transition: var(--timeng-function);
   transition: var(--timeng-function);
 }
-@media screen and (min-width) {
+@media screen and (min-width: 768px) {
   .portfolio-product__text {
+    font-weight: 400;
+    font-size: 18px;
     padding-top: 49px;
     padding-bottom: 77px;
     padding-left: 24px;
