@@ -6,6 +6,10 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--white-color);
+
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
 }
 
 .form-fotter {
