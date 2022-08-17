@@ -957,7 +957,8 @@ a {
   }
 }
 
-.header__icon {
+.header__icon--mail,
+.header__icon--phone {
   fill: currentColor;
 }
 
