@@ -1831,10 +1831,17 @@ a {
   -webkit-transition: var(--timeng-function);
   transition: var(--timeng-function);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .portfolio-product__text {
+    padding: 77px 24px;
     font-weight: 400;
     font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-product__text {
     padding-top: 49px;
     padding-bottom: 77px;
     padding-left: 24px;
