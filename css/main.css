@@ -967,6 +967,10 @@ a {
     width: 16px;
     height: 12px;
   }
+  .header__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 .header__link {
   display: -webkit-box;
@@ -1675,11 +1679,6 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__list {
-    margin-bottom: 60px;
-  }
-}
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
