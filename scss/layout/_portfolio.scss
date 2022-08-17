@@ -110,7 +110,9 @@
   height: 100%;
   padding: 24px;
 
-  @include fonts(14px, 28px);
+  font-size: 14px;
+  line-height: 2;
+
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
