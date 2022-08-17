@@ -752,6 +752,8 @@ a {
 
 .menu__btn {
   position: absolute;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -807,6 +809,10 @@ a {
 .menu__overlay.is-open .menu_container {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: -webkit-transform var(--timeng-function);
+  transition: -webkit-transform var(--timeng-function);
+  transition: transform var(--timeng-function);
+  transition: transform var(--timeng-function), -webkit-transform var(--timeng-function);
 }
 @media screen and (min-width: 768px) {
   .menu_container {
@@ -1002,6 +1008,19 @@ a {
     gap: 10px;
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+
+.menu__header--btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu__header--btn {
+    display: none;
   }
 }
 
